@@ -26,7 +26,7 @@ public class ToDoList {
 		}
 		
 		Node currTask = head;
-		while (currTask != null) {
+		while (currTask.next != null) {
 			if (currTask.task.equals(task)) {
 				System.out.println("-> Task already exists !!!");
 				return;
