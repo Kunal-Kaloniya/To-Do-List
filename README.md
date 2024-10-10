@@ -45,23 +45,26 @@ To run the project locally:
 
 1. Clone the repository:
 
+```bash
 git clone https://github.com/yourusername/ToDoList-LinkedList.git
-
+```
 
 2. Navigate to the project directory:
 
-cd ToDoList-LinkedList
+`cd ToDoList-LinkedList`
 
 
 3. Compile and run the Java program:
 
+```bash
 javac ToDoList.java
 java ToDoList
-
+```
 
 
 Example
 
+```bash
 --- Welcome to To-Do List ---
 Enter your choice:
 1. Add a task
@@ -77,6 +80,7 @@ Task added!
 
 # Example: Displaying tasks
 Finish homework -> false
+```
 
 Future Improvements
 
