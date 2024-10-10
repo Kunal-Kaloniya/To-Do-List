@@ -21,6 +21,7 @@ public class ToDoList {
 		
 		if (head == null) {
 			head = newTask;
+			System.out.println("-> Task added!");
 			return;
 		}
 		
@@ -34,6 +35,7 @@ public class ToDoList {
 		}
 		
 		currTask.next = newTask;
+		System.out.println("-> Task added!");
 	}
 	
 	// deleting a task from the to-do list
@@ -43,13 +45,14 @@ public class ToDoList {
 		
 		if (currTask != null && currTask.task.equals(task)) {
 			head = currTask.next;
+			System.out.println("-> Task deleted!");
 			return;
 		}
 		
 		while (currTask != null) {
 			if (currTask.task.equals(task)) {
 				prevTask.next = currTask.next;
-				System.out.println("-> Task deleted");
+				System.out.println("-> Task deleted!");
 				return;
 			}
 			prevTask = currTask;
@@ -70,7 +73,7 @@ public class ToDoList {
 				} else {
 					currTask.status = true;
 				}
-				System.out.println("-> Status changed");
+				System.out.println("-> Status changed!");
 				return;
 			}
 			currTask = currTask.next;
